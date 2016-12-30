@@ -1,0 +1,407 @@
+Using
+-Python 3.5
+-cx_freeze
+-PyQt5
+
+Created a simple program helloqt.py
+Ran cx_freeze using this in cmd: cxfreeze.bat --base-name=Win32GUI c:\Users\Daniel\Python\helloqt.py
+This creates a folder called \dist which contains the helloqt.exe file, but when I click this file nothing happens. 
+The output from cx_freeze is below, but I didnt see any errors:
+
+============================================================================
+
+C:\Users\Daniel\Anaconda3a\Scripts>cxfreeze.bat --base-name=Win32GUI c:\Users\Daniel\Python\helloqt.py
+copying C:\Users\Daniel\Anaconda3a\lib\site-packages\cx_Freeze\bases\Win32GUI.exe -> C:\Users\Daniel\Anaconda3a\Scripts\dist\helloqt.exe
+copying C:\Users\Daniel\Anaconda3a\api-ms-win-crt-math-l1-1-0.dll -> C:\Users\Daniel\Anaconda3a\Scripts\dist\api-ms-win-crt-math-l1-1-0.dll
+copying C:\Users\Daniel\Anaconda3a\api-ms-win-crt-stdio-l1-1-0.dll -> C:\Users\Daniel\Anaconda3a\Scripts\dist\api-ms-win-crt-stdio-l1-1-0.dll
+copying C:\Users\Daniel\Anaconda3a\python35.dll -> C:\Users\Daniel\Anaconda3a\Scripts\dist\python35.dll
+copying C:\Users\Daniel\Anaconda3a\api-ms-win-crt-environment-l1-1-0.dll -> C:\Users\Daniel\Anaconda3a\Scripts\dist\api-ms-win-crt-environment-l1-1-0.dll
+copying C:\Users\Daniel\Anaconda3a\api-ms-win-crt-heap-l1-1-0.dll -> C:\Users\Daniel\Anaconda3a\Scripts\dist\api-ms-win-crt-heap-l1-1-0.dll
+copying C:\Users\Daniel\Anaconda3a\api-ms-win-crt-convert-l1-1-0.dll -> C:\Users\Daniel\Anaconda3a\Scripts\dist\api-ms-win-crt-convert-l1-1-0.dll
+copying C:\Users\Daniel\Anaconda3a\api-ms-win-crt-time-l1-1-0.dll -> C:\Users\Daniel\Anaconda3a\Scripts\dist\api-ms-win-crt-time-l1-1-0.dll
+copying C:\Users\Daniel\Anaconda3a\api-ms-win-crt-locale-l1-1-0.dll -> C:\Users\Daniel\Anaconda3a\Scripts\dist\api-ms-win-crt-locale-l1-1-0.dll
+copying C:\Users\Daniel\Anaconda3a\api-ms-win-crt-string-l1-1-0.dll -> C:\Users\Daniel\Anaconda3a\Scripts\dist\api-ms-win-crt-string-l1-1-0.dll
+copying C:\Users\Daniel\Anaconda3a\api-ms-win-crt-process-l1-1-0.dll -> C:\Users\Daniel\Anaconda3a\Scripts\dist\api-ms-win-crt-process-l1-1-0.dll
+copying C:\Users\Daniel\Anaconda3a\api-ms-win-crt-filesystem-l1-1-0.dll -> C:\Users\Daniel\Anaconda3a\Scripts\dist\api-ms-win-crt-filesystem-l1-1-0.dll
+copying C:\Users\Daniel\Anaconda3a\api-ms-win-crt-runtime-l1-1-0.dll -> C:\Users\Daniel\Anaconda3a\Scripts\dist\api-ms-win-crt-runtime-l1-1-0.dll
+copying C:\Users\Daniel\Anaconda3a\api-ms-win-crt-conio-l1-1-0.dll -> C:\Users\Daniel\Anaconda3a\Scripts\dist\api-ms-win-crt-conio-l1-1-0.dll
+copying C:\Users\Daniel\Anaconda3a\VCRUNTIME140.dll -> C:\Users\Daniel\Anaconda3a\Scripts\dist\VCRUNTIME140.dll
+writing zip file C:\Users\Daniel\Anaconda3a\Scripts\dist\python35.zip
+
+  Name                      File
+  ----                      ----
+P PyQt5                     C:\Users\Daniel\Anaconda3a\lib\site-packages\PyQt5\__init__.py
+m PyQt5.QtCore              C:\Users\Daniel\Anaconda3a\lib\site-packages\PyQt5\QtCore.pyd
+m PyQt5.QtGui               C:\Users\Daniel\Anaconda3a\lib\site-packages\PyQt5\QtGui.pyd
+m PyQt5.QtWidgets           C:\Users\Daniel\Anaconda3a\lib\site-packages\PyQt5\QtWidgets.pyd
+m __future__                C:\Users\Daniel\Anaconda3a\lib\__future__.py
+m __startup__               C:\Users\Daniel\Anaconda3a\lib\site-packages\cx_Freeze\initscripts\__startup__.py
+m _ast
+m _bootlocale               C:\Users\Daniel\Anaconda3a\lib\_bootlocale.py
+m _bz2                      C:\Users\Daniel\Anaconda3a\DLLs\_bz2.pyd
+m _codecs
+m _codecs_cn
+m _codecs_hk
+m _codecs_iso2022
+m _codecs_jp
+m _codecs_kr
+m _codecs_tw
+m _collections
+m _collections_abc          C:\Users\Daniel\Anaconda3a\lib\_collections_abc.py
+m _compression              C:\Users\Daniel\Anaconda3a\lib\_compression.py
+m _ctypes                   C:\Users\Daniel\Anaconda3a\DLLs\_ctypes.pyd
+m _datetime
+m _dummy_thread             C:\Users\Daniel\Anaconda3a\lib\_dummy_thread.py
+m _functools
+m _hashlib                  C:\Users\Daniel\Anaconda3a\DLLs\_hashlib.pyd
+m _heapq
+m _imp
+m _io
+m _locale
+m _lzma                     C:\Users\Daniel\Anaconda3a\DLLs\_lzma.pyd
+m _md5
+m _multibytecodec
+m _opcode
+m _operator
+m _random
+m _sha1
+m _sha256
+m _sha512
+m _signal
+m _socket                   C:\Users\Daniel\Anaconda3a\DLLs\_socket.pyd
+m _sre
+m _ssl                      C:\Users\Daniel\Anaconda3a\DLLs\_ssl.pyd
+m _stat
+m _string
+m _strptime                 C:\Users\Daniel\Anaconda3a\lib\_strptime.py
+m _struct
+m _thread
+m _threading_local          C:\Users\Daniel\Anaconda3a\lib\_threading_local.py
+m _warnings
+m _weakref
+m _weakrefset               C:\Users\Daniel\Anaconda3a\lib\_weakrefset.py
+m _winapi
+m abc                       C:\Users\Daniel\Anaconda3a\lib\abc.py
+m argparse                  C:\Users\Daniel\Anaconda3a\lib\argparse.py
+m ast                       C:\Users\Daniel\Anaconda3a\lib\ast.py
+m atexit
+m base64                    C:\Users\Daniel\Anaconda3a\lib\base64.py
+m bdb                       C:\Users\Daniel\Anaconda3a\lib\bdb.py
+m binascii
+m builtins
+m bz2                       C:\Users\Daniel\Anaconda3a\lib\bz2.py
+m calendar                  C:\Users\Daniel\Anaconda3a\lib\calendar.py
+m cmd                       C:\Users\Daniel\Anaconda3a\lib\cmd.py
+m code                      C:\Users\Daniel\Anaconda3a\lib\code.py
+m codecs                    C:\Users\Daniel\Anaconda3a\lib\codecs.py
+m codeop                    C:\Users\Daniel\Anaconda3a\lib\codeop.py
+P collections               C:\Users\Daniel\Anaconda3a\lib\collections\__init__.py
+m collections.abc           C:\Users\Daniel\Anaconda3a\lib\collections\abc.py
+m contextlib                C:\Users\Daniel\Anaconda3a\lib\contextlib.py
+m copy                      C:\Users\Daniel\Anaconda3a\lib\copy.py
+m copyreg                   C:\Users\Daniel\Anaconda3a\lib\copyreg.py
+P ctypes                    C:\Users\Daniel\Anaconda3a\lib\ctypes\__init__.py
+m ctypes._endian            C:\Users\Daniel\Anaconda3a\lib\ctypes\_endian.py
+m ctypes.wintypes           C:\Users\Daniel\Anaconda3a\lib\ctypes\wintypes.py
+m datetime                  C:\Users\Daniel\Anaconda3a\lib\datetime.py
+m difflib                   C:\Users\Daniel\Anaconda3a\lib\difflib.py
+m dis                       C:\Users\Daniel\Anaconda3a\lib\dis.py
+m doctest                   C:\Users\Daniel\Anaconda3a\lib\doctest.py
+m dummy_threading           C:\Users\Daniel\Anaconda3a\lib\dummy_threading.py
+P email                     C:\Users\Daniel\Anaconda3a\lib\email\__init__.py
+m email._encoded_words      C:\Users\Daniel\Anaconda3a\lib\email\_encoded_words.py
+m email._header_value_parser C:\Users\Daniel\Anaconda3a\lib\email\_header_value_parser.py
+m email._parseaddr          C:\Users\Daniel\Anaconda3a\lib\email\_parseaddr.py
+m email._policybase         C:\Users\Daniel\Anaconda3a\lib\email\_policybase.py
+m email.base64mime          C:\Users\Daniel\Anaconda3a\lib\email\base64mime.py
+m email.charset             C:\Users\Daniel\Anaconda3a\lib\email\charset.py
+m email.contentmanager      C:\Users\Daniel\Anaconda3a\lib\email\contentmanager.py
+m email.encoders            C:\Users\Daniel\Anaconda3a\lib\email\encoders.py
+m email.errors              C:\Users\Daniel\Anaconda3a\lib\email\errors.py
+m email.feedparser          C:\Users\Daniel\Anaconda3a\lib\email\feedparser.py
+m email.generator           C:\Users\Daniel\Anaconda3a\lib\email\generator.py
+m email.header              C:\Users\Daniel\Anaconda3a\lib\email\header.py
+m email.headerregistry      C:\Users\Daniel\Anaconda3a\lib\email\headerregistry.py
+m email.iterators           C:\Users\Daniel\Anaconda3a\lib\email\iterators.py
+m email.message             C:\Users\Daniel\Anaconda3a\lib\email\message.py
+m email.parser              C:\Users\Daniel\Anaconda3a\lib\email\parser.py
+m email.policy              C:\Users\Daniel\Anaconda3a\lib\email\policy.py
+m email.quoprimime          C:\Users\Daniel\Anaconda3a\lib\email\quoprimime.py
+m email.utils               C:\Users\Daniel\Anaconda3a\lib\email\utils.py
+P encodings                 C:\Users\Daniel\Anaconda3a\lib\encodings\__init__.py
+m encodings.aliases         C:\Users\Daniel\Anaconda3a\lib\encodings\aliases.py
+m encodings.ascii           C:\Users\Daniel\Anaconda3a\lib\encodings\ascii.py
+m encodings.base64_codec    C:\Users\Daniel\Anaconda3a\lib\encodings\base64_codec.py
+m encodings.big5            C:\Users\Daniel\Anaconda3a\lib\encodings\big5.py
+m encodings.big5hkscs       C:\Users\Daniel\Anaconda3a\lib\encodings\big5hkscs.py
+m encodings.bz2_codec       C:\Users\Daniel\Anaconda3a\lib\encodings\bz2_codec.py
+m encodings.charmap         C:\Users\Daniel\Anaconda3a\lib\encodings\charmap.py
+m encodings.cp037           C:\Users\Daniel\Anaconda3a\lib\encodings\cp037.py
+m encodings.cp1006          C:\Users\Daniel\Anaconda3a\lib\encodings\cp1006.py
+m encodings.cp1026          C:\Users\Daniel\Anaconda3a\lib\encodings\cp1026.py
+m encodings.cp1125          C:\Users\Daniel\Anaconda3a\lib\encodings\cp1125.py
+m encodings.cp1140          C:\Users\Daniel\Anaconda3a\lib\encodings\cp1140.py
+m encodings.cp1250          C:\Users\Daniel\Anaconda3a\lib\encodings\cp1250.py
+m encodings.cp1251          C:\Users\Daniel\Anaconda3a\lib\encodings\cp1251.py
+m encodings.cp1252          C:\Users\Daniel\Anaconda3a\lib\encodings\cp1252.py
+m encodings.cp1253          C:\Users\Daniel\Anaconda3a\lib\encodings\cp1253.py
+m encodings.cp1254          C:\Users\Daniel\Anaconda3a\lib\encodings\cp1254.py
+m encodings.cp1255          C:\Users\Daniel\Anaconda3a\lib\encodings\cp1255.py
+m encodings.cp1256          C:\Users\Daniel\Anaconda3a\lib\encodings\cp1256.py
+m encodings.cp1257          C:\Users\Daniel\Anaconda3a\lib\encodings\cp1257.py
+m encodings.cp1258          C:\Users\Daniel\Anaconda3a\lib\encodings\cp1258.py
+m encodings.cp273           C:\Users\Daniel\Anaconda3a\lib\encodings\cp273.py
+m encodings.cp424           C:\Users\Daniel\Anaconda3a\lib\encodings\cp424.py
+m encodings.cp437           C:\Users\Daniel\Anaconda3a\lib\encodings\cp437.py
+m encodings.cp500           C:\Users\Daniel\Anaconda3a\lib\encodings\cp500.py
+m encodings.cp65001         C:\Users\Daniel\Anaconda3a\lib\encodings\cp65001.py
+m encodings.cp720           C:\Users\Daniel\Anaconda3a\lib\encodings\cp720.py
+m encodings.cp737           C:\Users\Daniel\Anaconda3a\lib\encodings\cp737.py
+m encodings.cp775           C:\Users\Daniel\Anaconda3a\lib\encodings\cp775.py
+m encodings.cp850           C:\Users\Daniel\Anaconda3a\lib\encodings\cp850.py
+m encodings.cp852           C:\Users\Daniel\Anaconda3a\lib\encodings\cp852.py
+m encodings.cp855           C:\Users\Daniel\Anaconda3a\lib\encodings\cp855.py
+m encodings.cp856           C:\Users\Daniel\Anaconda3a\lib\encodings\cp856.py
+m encodings.cp857           C:\Users\Daniel\Anaconda3a\lib\encodings\cp857.py
+m encodings.cp858           C:\Users\Daniel\Anaconda3a\lib\encodings\cp858.py
+m encodings.cp860           C:\Users\Daniel\Anaconda3a\lib\encodings\cp860.py
+m encodings.cp861           C:\Users\Daniel\Anaconda3a\lib\encodings\cp861.py
+m encodings.cp862           C:\Users\Daniel\Anaconda3a\lib\encodings\cp862.py
+m encodings.cp863           C:\Users\Daniel\Anaconda3a\lib\encodings\cp863.py
+m encodings.cp864           C:\Users\Daniel\Anaconda3a\lib\encodings\cp864.py
+m encodings.cp865           C:\Users\Daniel\Anaconda3a\lib\encodings\cp865.py
+m encodings.cp866           C:\Users\Daniel\Anaconda3a\lib\encodings\cp866.py
+m encodings.cp869           C:\Users\Daniel\Anaconda3a\lib\encodings\cp869.py
+m encodings.cp874           C:\Users\Daniel\Anaconda3a\lib\encodings\cp874.py
+m encodings.cp875           C:\Users\Daniel\Anaconda3a\lib\encodings\cp875.py
+m encodings.cp932           C:\Users\Daniel\Anaconda3a\lib\encodings\cp932.py
+m encodings.cp949           C:\Users\Daniel\Anaconda3a\lib\encodings\cp949.py
+m encodings.cp950           C:\Users\Daniel\Anaconda3a\lib\encodings\cp950.py
+m encodings.euc_jis_2004    C:\Users\Daniel\Anaconda3a\lib\encodings\euc_jis_2004.py
+m encodings.euc_jisx0213    C:\Users\Daniel\Anaconda3a\lib\encodings\euc_jisx0213.py
+m encodings.euc_jp          C:\Users\Daniel\Anaconda3a\lib\encodings\euc_jp.py
+m encodings.euc_kr          C:\Users\Daniel\Anaconda3a\lib\encodings\euc_kr.py
+m encodings.gb18030         C:\Users\Daniel\Anaconda3a\lib\encodings\gb18030.py
+m encodings.gb2312          C:\Users\Daniel\Anaconda3a\lib\encodings\gb2312.py
+m encodings.gbk             C:\Users\Daniel\Anaconda3a\lib\encodings\gbk.py
+m encodings.hex_codec       C:\Users\Daniel\Anaconda3a\lib\encodings\hex_codec.py
+m encodings.hp_roman8       C:\Users\Daniel\Anaconda3a\lib\encodings\hp_roman8.py
+m encodings.hz              C:\Users\Daniel\Anaconda3a\lib\encodings\hz.py
+m encodings.idna            C:\Users\Daniel\Anaconda3a\lib\encodings\idna.py
+m encodings.iso2022_jp      C:\Users\Daniel\Anaconda3a\lib\encodings\iso2022_jp.py
+m encodings.iso2022_jp_1    C:\Users\Daniel\Anaconda3a\lib\encodings\iso2022_jp_1.py
+m encodings.iso2022_jp_2    C:\Users\Daniel\Anaconda3a\lib\encodings\iso2022_jp_2.py
+m encodings.iso2022_jp_2004 C:\Users\Daniel\Anaconda3a\lib\encodings\iso2022_jp_2004.py
+m encodings.iso2022_jp_3    C:\Users\Daniel\Anaconda3a\lib\encodings\iso2022_jp_3.py
+m encodings.iso2022_jp_ext  C:\Users\Daniel\Anaconda3a\lib\encodings\iso2022_jp_ext.py
+m encodings.iso2022_kr      C:\Users\Daniel\Anaconda3a\lib\encodings\iso2022_kr.py
+m encodings.iso8859_1       C:\Users\Daniel\Anaconda3a\lib\encodings\iso8859_1.py
+m encodings.iso8859_10      C:\Users\Daniel\Anaconda3a\lib\encodings\iso8859_10.py
+m encodings.iso8859_11      C:\Users\Daniel\Anaconda3a\lib\encodings\iso8859_11.py
+m encodings.iso8859_13      C:\Users\Daniel\Anaconda3a\lib\encodings\iso8859_13.py
+m encodings.iso8859_14      C:\Users\Daniel\Anaconda3a\lib\encodings\iso8859_14.py
+m encodings.iso8859_15      C:\Users\Daniel\Anaconda3a\lib\encodings\iso8859_15.py
+m encodings.iso8859_16      C:\Users\Daniel\Anaconda3a\lib\encodings\iso8859_16.py
+m encodings.iso8859_2       C:\Users\Daniel\Anaconda3a\lib\encodings\iso8859_2.py
+m encodings.iso8859_3       C:\Users\Daniel\Anaconda3a\lib\encodings\iso8859_3.py
+m encodings.iso8859_4       C:\Users\Daniel\Anaconda3a\lib\encodings\iso8859_4.py
+m encodings.iso8859_5       C:\Users\Daniel\Anaconda3a\lib\encodings\iso8859_5.py
+m encodings.iso8859_6       C:\Users\Daniel\Anaconda3a\lib\encodings\iso8859_6.py
+m encodings.iso8859_7       C:\Users\Daniel\Anaconda3a\lib\encodings\iso8859_7.py
+m encodings.iso8859_8       C:\Users\Daniel\Anaconda3a\lib\encodings\iso8859_8.py
+m encodings.iso8859_9       C:\Users\Daniel\Anaconda3a\lib\encodings\iso8859_9.py
+m encodings.johab           C:\Users\Daniel\Anaconda3a\lib\encodings\johab.py
+m encodings.koi8_r          C:\Users\Daniel\Anaconda3a\lib\encodings\koi8_r.py
+m encodings.koi8_t          C:\Users\Daniel\Anaconda3a\lib\encodings\koi8_t.py
+m encodings.koi8_u          C:\Users\Daniel\Anaconda3a\lib\encodings\koi8_u.py
+m encodings.kz1048          C:\Users\Daniel\Anaconda3a\lib\encodings\kz1048.py
+m encodings.latin_1         C:\Users\Daniel\Anaconda3a\lib\encodings\latin_1.py
+m encodings.mac_arabic      C:\Users\Daniel\Anaconda3a\lib\encodings\mac_arabic.py
+m encodings.mac_centeuro    C:\Users\Daniel\Anaconda3a\lib\encodings\mac_centeuro.py
+m encodings.mac_croatian    C:\Users\Daniel\Anaconda3a\lib\encodings\mac_croatian.py
+m encodings.mac_cyrillic    C:\Users\Daniel\Anaconda3a\lib\encodings\mac_cyrillic.py
+m encodings.mac_farsi       C:\Users\Daniel\Anaconda3a\lib\encodings\mac_farsi.py
+m encodings.mac_greek       C:\Users\Daniel\Anaconda3a\lib\encodings\mac_greek.py
+m encodings.mac_iceland     C:\Users\Daniel\Anaconda3a\lib\encodings\mac_iceland.py
+m encodings.mac_latin2      C:\Users\Daniel\Anaconda3a\lib\encodings\mac_latin2.py
+m encodings.mac_roman       C:\Users\Daniel\Anaconda3a\lib\encodings\mac_roman.py
+m encodings.mac_romanian    C:\Users\Daniel\Anaconda3a\lib\encodings\mac_romanian.py
+m encodings.mac_turkish     C:\Users\Daniel\Anaconda3a\lib\encodings\mac_turkish.py
+m encodings.mbcs            C:\Users\Daniel\Anaconda3a\lib\encodings\mbcs.py
+m encodings.palmos          C:\Users\Daniel\Anaconda3a\lib\encodings\palmos.py
+m encodings.ptcp154         C:\Users\Daniel\Anaconda3a\lib\encodings\ptcp154.py
+m encodings.punycode        C:\Users\Daniel\Anaconda3a\lib\encodings\punycode.py
+m encodings.quopri_codec    C:\Users\Daniel\Anaconda3a\lib\encodings\quopri_codec.py
+m encodings.raw_unicode_escape C:\Users\Daniel\Anaconda3a\lib\encodings\raw_unicode_escape.py
+m encodings.rot_13          C:\Users\Daniel\Anaconda3a\lib\encodings\rot_13.py
+m encodings.shift_jis       C:\Users\Daniel\Anaconda3a\lib\encodings\shift_jis.py
+m encodings.shift_jis_2004  C:\Users\Daniel\Anaconda3a\lib\encodings\shift_jis_2004.py
+m encodings.shift_jisx0213  C:\Users\Daniel\Anaconda3a\lib\encodings\shift_jisx0213.py
+m encodings.tis_620         C:\Users\Daniel\Anaconda3a\lib\encodings\tis_620.py
+m encodings.undefined       C:\Users\Daniel\Anaconda3a\lib\encodings\undefined.py
+m encodings.unicode_escape  C:\Users\Daniel\Anaconda3a\lib\encodings\unicode_escape.py
+m encodings.unicode_internal C:\Users\Daniel\Anaconda3a\lib\encodings\unicode_internal.py
+m encodings.utf_16          C:\Users\Daniel\Anaconda3a\lib\encodings\utf_16.py
+m encodings.utf_16_be       C:\Users\Daniel\Anaconda3a\lib\encodings\utf_16_be.py
+m encodings.utf_16_le       C:\Users\Daniel\Anaconda3a\lib\encodings\utf_16_le.py
+m encodings.utf_32          C:\Users\Daniel\Anaconda3a\lib\encodings\utf_32.py
+m encodings.utf_32_be       C:\Users\Daniel\Anaconda3a\lib\encodings\utf_32_be.py
+m encodings.utf_32_le       C:\Users\Daniel\Anaconda3a\lib\encodings\utf_32_le.py
+m encodings.utf_7           C:\Users\Daniel\Anaconda3a\lib\encodings\utf_7.py
+m encodings.utf_8           C:\Users\Daniel\Anaconda3a\lib\encodings\utf_8.py
+m encodings.utf_8_sig       C:\Users\Daniel\Anaconda3a\lib\encodings\utf_8_sig.py
+m encodings.uu_codec        C:\Users\Daniel\Anaconda3a\lib\encodings\uu_codec.py
+m encodings.zlib_codec      C:\Users\Daniel\Anaconda3a\lib\encodings\zlib_codec.py
+m enum                      C:\Users\Daniel\Anaconda3a\lib\enum.py
+m errno
+m fnmatch                   C:\Users\Daniel\Anaconda3a\lib\fnmatch.py
+m functools                 C:\Users\Daniel\Anaconda3a\lib\functools.py
+m gc
+m genericpath               C:\Users\Daniel\Anaconda3a\lib\genericpath.py
+m getopt                    C:\Users\Daniel\Anaconda3a\lib\getopt.py
+m gettext                   C:\Users\Daniel\Anaconda3a\lib\gettext.py
+m glob                      C:\Users\Daniel\Anaconda3a\lib\glob.py
+m gzip                      C:\Users\Daniel\Anaconda3a\lib\gzip.py
+m hashlib                   C:\Users\Daniel\Anaconda3a\lib\hashlib.py
+m heapq                     C:\Users\Daniel\Anaconda3a\lib\heapq.py
+m helloqt__init__           C:\Users\Daniel\Anaconda3a\lib\site-packages\cx_Freeze\initscripts\Console.py
+m helloqt__main__           c:\Users\Daniel\Python\helloqt.py
+P html                      C:\Users\Daniel\Anaconda3a\lib\html\__init__.py
+m html.entities             C:\Users\Daniel\Anaconda3a\lib\html\entities.py
+P http                      C:\Users\Daniel\Anaconda3a\lib\http\__init__.py
+m http.client               C:\Users\Daniel\Anaconda3a\lib\http\client.py
+m http.server               C:\Users\Daniel\Anaconda3a\lib\http\server.py
+m imp                       C:\Users\Daniel\Anaconda3a\lib\imp.py
+P importlib                 C:\Users\Daniel\Anaconda3a\lib\importlib\__init__.py
+m importlib._bootstrap      C:\Users\Daniel\Anaconda3a\lib\importlib\_bootstrap.py
+m importlib._bootstrap_external C:\Users\Daniel\Anaconda3a\lib\importlib\_bootstrap_external.py
+m importlib.abc             C:\Users\Daniel\Anaconda3a\lib\importlib\abc.py
+m importlib.machinery       C:\Users\Daniel\Anaconda3a\lib\importlib\machinery.py
+m importlib.util            C:\Users\Daniel\Anaconda3a\lib\importlib\util.py
+m inspect                   C:\Users\Daniel\Anaconda3a\lib\inspect.py
+m io                        C:\Users\Daniel\Anaconda3a\lib\io.py
+m ipaddress                 C:\Users\Daniel\Anaconda3a\lib\ipaddress.py
+m itertools
+m keyword                   C:\Users\Daniel\Anaconda3a\lib\keyword.py
+m linecache                 C:\Users\Daniel\Anaconda3a\lib\linecache.py
+m locale                    C:\Users\Daniel\Anaconda3a\lib\locale.py
+P logging                   C:\Users\Daniel\Anaconda3a\lib\logging\__init__.py
+m lzma                      C:\Users\Daniel\Anaconda3a\lib\lzma.py
+m marshal
+m math
+m mimetypes                 C:\Users\Daniel\Anaconda3a\lib\mimetypes.py
+m msvcrt
+m nt
+m ntpath                    C:\Users\Daniel\Anaconda3a\lib\ntpath.py
+m opcode                    C:\Users\Daniel\Anaconda3a\lib\opcode.py
+m operator                  C:\Users\Daniel\Anaconda3a\lib\operator.py
+m optparse                  C:\Users\Daniel\Anaconda3a\lib\optparse.py
+m os                        C:\Users\Daniel\Anaconda3a\lib\os.py
+m pdb                       C:\Users\Daniel\Anaconda3a\lib\pdb.py
+m pkgutil                   C:\Users\Daniel\Anaconda3a\lib\pkgutil.py
+m platform                  C:\Users\Daniel\Anaconda3a\lib\platform.py
+m plistlib                  C:\Users\Daniel\Anaconda3a\lib\plistlib.py
+m posixpath                 C:\Users\Daniel\Anaconda3a\lib\posixpath.py
+m pprint                    C:\Users\Daniel\Anaconda3a\lib\pprint.py
+m py_compile                C:\Users\Daniel\Anaconda3a\lib\py_compile.py
+m pydoc                     C:\Users\Daniel\Anaconda3a\lib\pydoc.py
+P pydoc_data                C:\Users\Daniel\Anaconda3a\lib\pydoc_data\__init__.py
+m pydoc_data.topics         C:\Users\Daniel\Anaconda3a\lib\pydoc_data\topics.py
+m pyexpat                   C:\Users\Daniel\Anaconda3a\DLLs\pyexpat.pyd
+m quopri                    C:\Users\Daniel\Anaconda3a\lib\quopri.py
+m random                    C:\Users\Daniel\Anaconda3a\lib\random.py
+m re                        C:\Users\Daniel\Anaconda3a\lib\re.py
+m reprlib                   C:\Users\Daniel\Anaconda3a\lib\reprlib.py
+m select                    C:\Users\Daniel\Anaconda3a\DLLs\select.pyd
+m selectors                 C:\Users\Daniel\Anaconda3a\lib\selectors.py
+m shlex                     C:\Users\Daniel\Anaconda3a\lib\shlex.py
+m shutil                    C:\Users\Daniel\Anaconda3a\lib\shutil.py
+m signal                    C:\Users\Daniel\Anaconda3a\lib\signal.py
+m sip                       C:\Users\Daniel\Anaconda3a\lib\site-packages\sip.pyd
+m socket                    C:\Users\Daniel\Anaconda3a\lib\socket.py
+m socketserver              C:\Users\Daniel\Anaconda3a\lib\socketserver.py
+m sre_compile               C:\Users\Daniel\Anaconda3a\lib\sre_compile.py
+m sre_constants             C:\Users\Daniel\Anaconda3a\lib\sre_constants.py
+m sre_parse                 C:\Users\Daniel\Anaconda3a\lib\sre_parse.py
+m ssl                       C:\Users\Daniel\Anaconda3a\lib\ssl.py
+m stat                      C:\Users\Daniel\Anaconda3a\lib\stat.py
+m string                    C:\Users\Daniel\Anaconda3a\lib\string.py
+m stringprep                C:\Users\Daniel\Anaconda3a\lib\stringprep.py
+m struct                    C:\Users\Daniel\Anaconda3a\lib\struct.py
+m subprocess                C:\Users\Daniel\Anaconda3a\lib\subprocess.py
+m sys
+m tarfile                   C:\Users\Daniel\Anaconda3a\lib\tarfile.py
+m tempfile                  C:\Users\Daniel\Anaconda3a\lib\tempfile.py
+m textwrap                  C:\Users\Daniel\Anaconda3a\lib\textwrap.py
+m threading                 C:\Users\Daniel\Anaconda3a\lib\threading.py
+m time
+m token                     C:\Users\Daniel\Anaconda3a\lib\token.py
+m tokenize                  C:\Users\Daniel\Anaconda3a\lib\tokenize.py
+m traceback                 C:\Users\Daniel\Anaconda3a\lib\traceback.py
+m tty                       C:\Users\Daniel\Anaconda3a\lib\tty.py
+m types                     C:\Users\Daniel\Anaconda3a\lib\types.py
+m unicodedata               C:\Users\Daniel\Anaconda3a\DLLs\unicodedata.pyd
+P unittest                  C:\Users\Daniel\Anaconda3a\lib\unittest\__init__.py
+m unittest.case             C:\Users\Daniel\Anaconda3a\lib\unittest\case.py
+m unittest.loader           C:\Users\Daniel\Anaconda3a\lib\unittest\loader.py
+m unittest.main             C:\Users\Daniel\Anaconda3a\lib\unittest\main.py
+m unittest.result           C:\Users\Daniel\Anaconda3a\lib\unittest\result.py
+m unittest.runner           C:\Users\Daniel\Anaconda3a\lib\unittest\runner.py
+m unittest.signals          C:\Users\Daniel\Anaconda3a\lib\unittest\signals.py
+m unittest.suite            C:\Users\Daniel\Anaconda3a\lib\unittest\suite.py
+m unittest.util             C:\Users\Daniel\Anaconda3a\lib\unittest\util.py
+P urllib                    C:\Users\Daniel\Anaconda3a\lib\urllib\__init__.py
+m urllib.parse              C:\Users\Daniel\Anaconda3a\lib\urllib\parse.py
+m uu                        C:\Users\Daniel\Anaconda3a\lib\uu.py
+m warnings                  C:\Users\Daniel\Anaconda3a\lib\warnings.py
+m weakref                   C:\Users\Daniel\Anaconda3a\lib\weakref.py
+m webbrowser                C:\Users\Daniel\Anaconda3a\lib\webbrowser.py
+m winreg
+P xml                       C:\Users\Daniel\Anaconda3a\lib\xml\__init__.py
+P xml.parsers               C:\Users\Daniel\Anaconda3a\lib\xml\parsers\__init__.py
+m xml.parsers.expat         C:\Users\Daniel\Anaconda3a\lib\xml\parsers\expat.py
+m zipfile                   C:\Users\Daniel\Anaconda3a\lib\zipfile.py
+m zipimport
+m zlib
+
+Missing modules:
+? __main__ imported from bdb, pdb
+? _dummy_threading imported from dummy_threading
+? _frozen_importlib imported from importlib, importlib.abc
+? _frozen_importlib_external imported from importlib, importlib._bootstrap, importlib.abc
+? _posixsubprocess imported from subprocess
+? _winreg imported from platform
+? ce imported from os
+? grp imported from shutil, tarfile
+? java.lang imported from platform
+? org.python.core imported from copy
+? os.path imported from os, pkgutil, py_compile, unittest, unittest.util
+? posix imported from os
+? pwd imported from http.server, posixpath, shutil, tarfile, webbrowser
+? termios imported from tty
+? vms_lib imported from platform
+This is not necessarily a problem - the modules may not be needed on this platform.
+
+copying C:\Users\Daniel\Anaconda3a\lib\site-packages\PyQt5\QtCore.pyd -> C:\Users\Daniel\Anaconda3a\Scripts\dist\PyQt5\QtCore.pyd
+copying C:\Users\Daniel\Anaconda3a\Library\bin\Qt5Core.dll -> C:\Users\Daniel\Anaconda3a\Scripts\dist\Qt5Core.dll
+copying C:\Users\Daniel\Anaconda3a\Library\bin\zlib.dll -> C:\Users\Daniel\Anaconda3a\Scripts\dist\zlib.dll
+copying C:\Users\Daniel\Anaconda3a\Library\bin\api-ms-win-crt-utility-l1-1-0.dll -> C:\Users\Daniel\Anaconda3a\Scripts\dist\api-ms-win-crt-utility-l1-1-0.dll
+copying C:\Users\Daniel\Anaconda3a\Library\bin\icuuc57.dll -> C:\Users\Daniel\Anaconda3a\Scripts\dist\icuuc57.dll
+copying C:\Users\Daniel\Anaconda3a\Library\bin\icudt57.dll -> C:\Users\Daniel\Anaconda3a\Scripts\dist\icudt57.dll
+copying C:\Users\Daniel\Anaconda3a\Library\bin\MSVCP140.dll -> C:\Users\Daniel\Anaconda3a\Scripts\dist\MSVCP140.dll
+copying C:\Users\Daniel\Anaconda3a\Library\bin\icuin57.dll -> C:\Users\Daniel\Anaconda3a\Scripts\dist\icuin57.dll
+copying C:\Users\Daniel\Anaconda3a\lib\site-packages\PyQt5\QtGui.pyd -> C:\Users\Daniel\Anaconda3a\Scripts\dist\PyQt5\QtGui.pyd
+copying C:\Users\Daniel\Anaconda3a\Library\bin\Qt5Gui.dll -> C:\Users\Daniel\Anaconda3a\Scripts\dist\Qt5Gui.dll
+copying C:\Users\Daniel\Anaconda3a\Library\bin\libpng16.dll -> C:\Users\Daniel\Anaconda3a\Scripts\dist\libpng16.dll
+copying C:\Users\Daniel\Anaconda3a\lib\site-packages\PyQt5\QtWidgets.pyd -> C:\Users\Daniel\Anaconda3a\Scripts\dist\PyQt5\QtWidgets.pyd
+copying C:\Users\Daniel\Anaconda3a\Library\bin\Qt5Widgets.dll -> C:\Users\Daniel\Anaconda3a\Scripts\dist\Qt5Widgets.dll
+copying C:\Users\Daniel\Anaconda3a\DLLs\_bz2.pyd -> C:\Users\Daniel\Anaconda3a\Scripts\dist\_bz2.pyd
+copying C:\Users\Daniel\Anaconda3a\DLLs\_ctypes.pyd -> C:\Users\Daniel\Anaconda3a\Scripts\dist\_ctypes.pyd
+copying C:\Users\Daniel\Anaconda3a\DLLs\_hashlib.pyd -> C:\Users\Daniel\Anaconda3a\Scripts\dist\_hashlib.pyd
+copying C:\Users\Daniel\Anaconda3a\DLLs\_lzma.pyd -> C:\Users\Daniel\Anaconda3a\Scripts\dist\_lzma.pyd
+copying C:\Users\Daniel\Anaconda3a\DLLs\_socket.pyd -> C:\Users\Daniel\Anaconda3a\Scripts\dist\_socket.pyd
+copying C:\Users\Daniel\Anaconda3a\DLLs\_ssl.pyd -> C:\Users\Daniel\Anaconda3a\Scripts\dist\_ssl.pyd
+copying C:\Users\Daniel\Anaconda3a\DLLs\pyexpat.pyd -> C:\Users\Daniel\Anaconda3a\Scripts\dist\pyexpat.pyd
+copying C:\Users\Daniel\Anaconda3a\DLLs\select.pyd -> C:\Users\Daniel\Anaconda3a\Scripts\dist\select.pyd
+copying C:\Users\Daniel\Anaconda3a\lib\site-packages\sip.pyd -> C:\Users\Daniel\Anaconda3a\Scripts\dist\sip.pyd
+copying C:\Users\Daniel\Anaconda3a\DLLs\unicodedata.pyd -> C:\Users\Daniel\Anaconda3a\Scripts\dist\unicodedata.pyd
